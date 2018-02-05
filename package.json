@@ -1,5 +1,5 @@
 {
-  "name": "rec-league-app-client",
+  "name": "rec-league-deploy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,7 +23,7 @@
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
-    "build": "cd rec-league-client && npm install && npm run build && cd ..",
+    "build": "cd client && npm install && npm run build && cd ..",
     "deploy": "cp -a client/build/. public/",
     "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
   }
