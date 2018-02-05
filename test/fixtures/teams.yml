@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  wins: 1
+  Losses: 1
+  logo_url--no-test-framework: MyString
+
+two:
+  name: MyString
+  wins: 1
+  Losses: 1
+  logo_url--no-test-framework: MyString
