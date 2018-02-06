@@ -1723,3 +1723,68 @@ Processing by Api::TeamsController#index as */*
 Completed 200 OK in 187ms (Views: 145.4ms | ActiveRecord: 40.9ms)
 
 
+Started GET "/api/teams" for ::1 at 2018-02-05 13:42:45 -0500
+Started GET "/api/players" for ::1 at 2018-02-05 13:42:45 -0500
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::TeamsController#index as */*
+  [1m[35m (23.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::PlayersController#index as */*
+  [1m[36mPlayer Load (14.7ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  [1m[36mTeam Load (32.9ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+[active_model_serializers]   [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 1]]
+[active_model_serializers]   [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 2]]
+[active_model_serializers]   [1m[36mTeam Load (8.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPlayer Load (3.8ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 3]]
+[active_model_serializers]   [1m[36mTeam Load (3.8ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPlayer Load (0.9ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 4]]
+[active_model_serializers]   [1m[36mTeam Load (1.9ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (20.6ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPlayer Load (24.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 5]]
+[active_model_serializers]   [1m[36mTeam Load (23.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (1.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPlayer Load (29.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 6]]
+[active_model_serializers]   [1m[36mPlayer Load (3.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 7]]
+[active_model_serializers]   [1m[36mTeam Load (10.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPlayer Load (1.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 8]]
+[active_model_serializers]   [1m[36mPlayer Load (4.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 9]]
+[active_model_serializers]   [1m[36mTeam Load (3.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPlayer Load (1.9ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 10]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (157.49ms)
+[active_model_serializers]   [1m[36mTeam Load (44.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 322ms (Views: 137.1ms | ActiveRecord: 171.6ms)
+
+
+[active_model_serializers]   [1m[36mTeam Load (16.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (259.44ms)
+Completed 200 OK in 405ms (Views: 159.3ms | ActiveRecord: 238.5ms)
+
+
+Started GET "/api/teams" for ::1 at 2018-02-06 10:50:00 -0500
+  [1m[35m (19.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::TeamsController#index as HTML
+  [1m[36mTeam Load (53.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+[active_model_serializers]   [1m[36mPlayer Load (20.6ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 1]]
+[active_model_serializers]   [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 2]]
+[active_model_serializers]   [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 3]]
+[active_model_serializers]   [1m[36mPlayer Load (0.9ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 4]]
+[active_model_serializers]   [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 5]]
+[active_model_serializers]   [1m[36mPlayer Load (0.8ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 6]]
+[active_model_serializers]   [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 7]]
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 8]]
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 9]]
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."team_id" = $1[0m  [["team_id", 10]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (102.49ms)
+Completed 200 OK in 516ms (Views: 133.5ms | ActiveRecord: 374.0ms)
+
+
