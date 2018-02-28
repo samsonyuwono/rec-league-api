@@ -3799,3 +3799,990 @@ Processing by Api::PlayersController#index as HTML
 Completed 200 OK in 233ms (Views: 98.1ms | ActiveRecord: 125.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-02-27 16:57:54 -0500
+Started GET "/" for 127.0.0.1 at 2018-02-27 16:57:58 -0500
+  [1m[35m (164.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (165.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (9.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6540698671463456430)[0m
+  [1m[35m (31.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20180227214929)
+  [1m[35m (13.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2472.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (103.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180227214929"]]
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (119.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6540698671463456430)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6540698671463456430)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6540698671463456430)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (209.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "samson"], ["password_digest", "$2a$10$FasldbxXWKZvZxR/7CxBGeNGXRiYi/NR6YWkslNI8fJpg8oM4RPby"], ["created_at", "2018-02-27 22:04:07.358697"], ["updated_at", "2018-02-27 22:04:07.358697"]]
+  [1m[35m (16.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (25.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started POST "/users" for 127.0.0.1 at 2018-02-27 18:14:40 -0500
+  [1m[35m (62.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2018-02-27 18:14:58 -0500
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2018-02-27 18:15:49 -0500
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2018-02-27 18:16:46 -0500
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2018-02-27 18:17:36 -0500
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2018-02-27 18:17:37 -0500
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2018-02-27 18:18:14 -0500
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2018-02-27 18:20:49 -0500
+  
+SyntaxError (/Users/samsonyuwono/Desktop/Development/rec-league-deploy/app/controllers/application_controller.rb:1: syntax error, unexpected end-of-input):
+  
+app/controllers/application_controller.rb:1: syntax error, unexpected end-of-input
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Started POST "/users" for 127.0.0.1 at 2018-02-27 18:21:08 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"andrew", "password"=>"[FILTERED]", "user"=>{"username"=>"andrew"}}
+  [1m[35m (50.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (666.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "andrew"], ["password_digest", "$2a$10$WwkGiui8/Bc7Qsd0qAAIquoSNhCUHHG8K.NNV4nGvKYMIQ05cuJXe"], ["created_at", "2018-02-27 23:21:10.702535"], ["updated_at", "2018-02-27 23:21:10.702535"]]
+  [1m[35m (163.7ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.62ms)
+Completed 200 OK in 1186ms (Views: 20.7ms | ActiveRecord: 2142.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-02-27 18:32:27 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/login"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/login" for 127.0.0.1 at 2018-02-27 18:33:11 -0500
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"andrew", "password"=>"[FILTERED]", "auth"=>{"username"=>"andrew", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (64.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "andrew"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.97ms)
+Completed 200 OK in 393ms (Views: 15.8ms | ActiveRecord: 227.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-02-27 18:33:27 -0500
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"samson", "password"=>"[FILTERED]", "auth"=>{"username"=>"samson", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (166.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "samson"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (1.96ms)
+Completed 200 OK in 238ms (Views: 4.1ms | ActiveRecord: 166.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-02-27 18:44:26 -0500
+Processing by AuthController#create as */*
+  Parameters: {"username"=>"samson", "password"=>"[FILTERED]", "auth"=>{"username"=>"samson", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "samson"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.91ms)
+Completed 200 OK in 433ms (Views: 85.8ms | ActiveRecord: 232.3ms)
+
+
+  [1m[35m (17.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6540698671463456430)[0m
+  [1m[35m (24.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (23.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (12.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6540698671463456430)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (16.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (71.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (28.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (12.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (20.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (10.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6540698671463456430)[0m
+  [1m[35m (54.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserIdToTeams (20180227235143)
+  [1m[35m (33.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (594.7ms)[0m  [1m[35mALTER TABLE "teams" ADD "user_id" integer[0m
+  [1m[35mSQL (150.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180227235143"]]
+  [1m[35m (82.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (11.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6540698671463456430)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTeam Load (44.9ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" ORDER BY "teams"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (54.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTeam Load (2.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" ORDER BY "teams"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTeam Load (0.9ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mTeam Load (5.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" ORDER BY "teams"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (25.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (233.9ms)[0m  [1m[32mINSERT INTO "teams" ("name", "wins", "losses", "logo_url", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Knicks"], ["wins", 5], ["losses", 60], ["logo_url", "test.com"], ["created_at", "2018-02-27 23:55:45.107582"], ["updated_at", "2018-02-27 23:55:45.107582"], ["user_id", 1]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 19:01:13 -0500
+  [1m[35m (13.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#me as HTML
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 19:45:59 -0500
+Completed 401 Unauthorized in 2756404ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `me'
+app/controllers/users_controller.rb:13:in `me'
+Processing by UsersController#me as HTML
+Completed 401 Unauthorized in 178ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `me'
+app/controllers/users_controller.rb:13:in `me'
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6540698671463456430)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (5.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6540698671463456430)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 19:54:24 -0500
+  [1m[35m (8.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#me as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (39.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (18.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTeam Load (29.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+Completed 401 Unauthorized in 1103108ms (ActiveRecord: 424.5ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `me'
+app/controllers/users_controller.rb:13:in `me'
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 20:22:29 -0500
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#me as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (29.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (27.78ms)
+Completed 200 OK in 137ms (Views: 28.1ms | ActiveRecord: 126.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-02-27 20:29:22 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"quavo", "password"=>"[FILTERED]", "user"=>{"username"=>"quavo"}}
+  [1m[35m (7.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (41.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "quavo"], ["password_digest", "$2a$10$xbJxdoVz2MkdxrH8QcxWxORn1uOWl8wHpJBC5rUmHnIlFMwV.lkqC"], ["created_at", "2018-02-28 01:29:33.442637"], ["updated_at", "2018-02-28 01:29:33.442637"]]
+  [1m[35m (47.8ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.75ms)
+Completed 200 OK in 184ms (Views: 8.9ms | ActiveRecord: 96.3ms)
+
+
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 20:30:31 -0500
+Processing by UsersController#me as */*
+  [1m[36mUser Load (29.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (60.04ms)
+Completed 200 OK in 221ms (Views: 10.1ms | ActiveRecord: 81.6ms)
+
+
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:02:13 -0500
+Processing by UsersController#me as */*
+Completed 401 Unauthorized in 217ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `authHeader' for #<UsersController:0x007f8fbe3ede10>
+Did you mean?  auth_header):
+  
+app/controllers/application_controller.rb:13:in `decoded_token'
+app/controllers/application_controller.rb:18:in `current_user'
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:03:24 -0500
+Processing by UsersController#me as */*
+Completed 401 Unauthorized in 316ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `authHeader' for #<UsersController:0x007f8fbdc49998>
+Did you mean?  auth_header):
+  
+app/controllers/application_controller.rb:13:in `decoded_token'
+app/controllers/application_controller.rb:18:in `current_user'
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:03:34 -0500
+Processing by UsersController#me as */*
+Completed 401 Unauthorized in 239ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `authHeader' for #<UsersController:0x007f8fbe3de4b0>
+Did you mean?  auth_header):
+  
+app/controllers/application_controller.rb:13:in `decoded_token'
+app/controllers/application_controller.rb:18:in `current_user'
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:04:31 -0500
+Processing by UsersController#me as */*
+Completed 401 Unauthorized in 142ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `authHeader' for #<UsersController:0x007f8fbd2cd3d8>
+Did you mean?  auth_header):
+  
+app/controllers/application_controller.rb:13:in `decoded_token'
+app/controllers/application_controller.rb:18:in `current_user'
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:06:23 -0500
+Processing by UsersController#me as */*
+Completed 401 Unauthorized in 211ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `authHeader' for #<UsersController:0x007f8fbea456a0>
+Did you mean?  auth_header):
+  
+app/controllers/application_controller.rb:12:in `decoded_token'
+app/controllers/application_controller.rb:17:in `current_user'
+Started GET "/users" for 127.0.0.1 at 2018-02-27 21:07:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:07:27 -0500
+Processing by UsersController#me as */*
+Completed 401 Unauthorized in 229ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `authHeader' for #<UsersController:0x007f8fbda99eb8>
+Did you mean?  auth_header):
+  
+app/controllers/application_controller.rb:12:in `decoded_token'
+app/controllers/application_controller.rb:17:in `current_user'
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:07:59 -0500
+Processing by UsersController#me as */*
+Completed 401 Unauthorized in 137ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `authHeader' for #<UsersController:0x007f8fbd9b07b8>
+Did you mean?  auth_header):
+  
+app/controllers/application_controller.rb:12:in `decoded_token'
+app/controllers/application_controller.rb:17:in `current_user'
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:08:21 -0500
+Processing by UsersController#me as */*
+Completed 401 Unauthorized in 86ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `authHeader' for #<UsersController:0x007f8fbe6345e8>
+Did you mean?  auth_header):
+  
+app/controllers/application_controller.rb:12:in `decoded_token'
+app/controllers/application_controller.rb:17:in `current_user'
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:08:27 -0500
+Processing by UsersController#me as */*
+Completed 401 Unauthorized in 99ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `authHeader' for #<UsersController:0x007f8fbe675f20>
+Did you mean?  auth_header):
+  
+app/controllers/application_controller.rb:12:in `decoded_token'
+app/controllers/application_controller.rb:17:in `current_user'
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:08:31 -0500
+Processing by UsersController#me as */*
+Completed 401 Unauthorized in 94ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `authHeader' for #<UsersController:0x007f8fbd4cd930>
+Did you mean?  auth_header):
+  
+app/controllers/application_controller.rb:12:in `decoded_token'
+app/controllers/application_controller.rb:17:in `current_user'
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:08:38 -0500
+Processing by UsersController#me as */*
+Completed 401 Unauthorized in 100ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `authHeader' for #<UsersController:0x007f8fbec65f48>
+Did you mean?  auth_header):
+  
+app/controllers/application_controller.rb:12:in `decoded_token'
+app/controllers/application_controller.rb:17:in `current_user'
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:09:18 -0500
+Processing by UsersController#me as */*
+  [1m[36mUser Load (96.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (41.23ms)
+Completed 200 OK in 2561ms (Views: 13.3ms | ActiveRecord: 2477.0ms)
+
+
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:17:37 -0500
+Processing by UsersController#me as */*
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/application_controller.rb:12:in `decoded_token'
+app/controllers/application_controller.rb:17:in `current_user'
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:21:00 -0500
+Processing by UsersController#me as */*
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `teams' for nil:NilClass):
+  
+app/controllers/users_controller.rb:14:in `me'
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:22:43 -0500
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.69ms)
+Completed 200 OK in 51ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:23:02 -0500
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.9ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:23:04 -0500
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:23:12 -0500
+Processing by UsersController#me as */*
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/application_controller.rb:14:in `decoded_token'
+app/controllers/application_controller.rb:20:in `current_user'
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:26:35 -0500
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (11.89ms)
+Completed 200 OK in 24929ms (Views: 12487.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:29:42 -0500
+Processing by UsersController#me as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.07ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:32:11 -0500
+Processing by UsersController#me as */*
+  [1m[36mUser Load (56.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (6.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (16.63ms)
+Completed 200 OK in 384ms (Views: 14.8ms | ActiveRecord: 297.7ms)
+
+
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:37:39 -0500
+Processing by UsersController#me as */*
+  [1m[36mUser Load (9.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.8ms)
+Completed 200 OK in 60ms (Views: 14.3ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:38:47 -0500
+  [1m[35m (35.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#me as */*
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-02-27 21:38:48 -0500
+Processing by ApplicationController#welcome as */*
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-02-27 21:38:48 -0500
+Processing by ApplicationController#welcome as */*
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-02-27 21:38:48 -0500
+Processing by ApplicationController#welcome as */*
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-02-27 21:38:48 -0500
+Processing by ApplicationController#welcome as */*
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-02-27 21:38:48 -0500
+Processing by ApplicationController#welcome as */*
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-02-27 21:38:48 -0500
+Processing by ApplicationController#welcome as */*
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-02-27 21:38:48 -0500
+Processing by ApplicationController#welcome as */*
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-02-27 21:38:48 -0500
+Processing by ApplicationController#welcome as */*
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-02-27 21:38:48 -0500
+Processing by ApplicationController#welcome as */*
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-02-27 21:38:48 -0500
+Processing by ApplicationController#welcome as */*
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/me" for 127.0.0.1 at 2018-02-27 21:39:22 -0500
+Processing by UsersController#me as */*
+Redirected to http://localhost:3000/welcome
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-02-27 21:39:23 -0500
+Processing by ApplicationController#welcome as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.4ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
